@@ -561,7 +561,7 @@ Para montar o ponto único de entrada, utilizaremos uma aplicação de proxy rev
 
 !!! note "NGINX"
 
-    Loadbalancing é um mecanismo útil para distribuir o tráfego de entrada por vários servidores privados virtuais capazes
+    Loadbalancing é um mecanismo útil para distribuir o tráfego de entrada por vários servidores privados virtuais capazes.
 
     * Em resumo, ele vai fazer o balanceamento das máquinas (server 2 ou 3).
 
