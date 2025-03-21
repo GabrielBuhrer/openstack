@@ -1,0 +1,1668 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+        <meta name="author" content="Silva, J.; Souza, P.">
+      
+      
+        <link rel="canonical" href="https://hsandmann.github.io/insper.cloud.template/roteiro1/main/">
+      
+      
+        <link rel="prev" href="../..">
+      
+      
+        <link rel="next" href="../../roteiro2/main/">
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.7">
+    
+    
+      
+        <title>Roteiro 1 - Computação em Nuvem</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.8608ea7d.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+  
+  
+    
+    
+  
+    
+    
+  
+    
+    
+  
+    
+    
+  
+    
+    
+  
+    
+    
+  
+    
+    
+  
+    
+    
+  
+    
+    
+  
+    
+    
+  
+    
+    
+  
+    
+    
+  
+  
+  <style>:root{--md-admonition-icon--note:url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M64 32C28.7 32 0 60.7 0 96v320c0 35.3 28.7 64 64 64h224V368c0-26.5 21.5-48 48-48h112V96c0-35.3-28.7-64-64-64zm384 320H336c-8.8 0-16 7.2-16 16v112l32-32 64-64z"/></svg>');--md-admonition-icon--abstract:url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M96 0C43 0 0 43 0 96v320c0 53 43 96 96 96h320c17.7 0 32-14.3 32-32s-14.3-32-32-32v-64c17.7 0 32-14.3 32-32V32c0-17.7-14.3-32-32-32H96m0 384h256v64H96c-17.7 0-32-14.3-32-32s14.3-32 32-32m32-240c0-8.8 7.2-16 16-16h192c8.8 0 16 7.2 16 16s-7.2 16-16 16H144c-8.8 0-16-7.2-16-16m16 48h192c8.8 0 16 7.2 16 16s-7.2 16-16 16H144c-8.8 0-16-7.2-16-16s7.2-16 16-16"/></svg>');--md-admonition-icon--info:url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M256 512a256 256 0 1 0 0-512 256 256 0 1 0 0 512m-40-176h24v-64h-24c-13.3 0-24-10.7-24-24s10.7-24 24-24h48c13.3 0 24 10.7 24 24v88h8c13.3 0 24 10.7 24 24s-10.7 24-24 24h-80c-13.3 0-24-10.7-24-24s10.7-24 24-24m40-208a32 32 0 1 1 0 64 32 32 0 1 1 0-64"/></svg>');--md-admonition-icon--tip:url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M480 32c0-12.9-7.8-24.6-19.8-29.6S434.5.2 425.3 9.3L381.7 53c-48 48-113.1 75-181 75H64c-35.3 0-64 28.7-64 64v96c0 35.3 28.7 64 64 64v128c0 17.7 14.3 32 32 32h64c17.7 0 32-14.3 32-32V352h8.7c67.9 0 133 27 181 75l43.6 43.6c9.2 9.2 22.9 11.9 34.9 6.9s19.8-16.6 19.8-29.6V300.3c18.6-8.8 32-32.5 32-60.4s-13.4-51.6-32-60.4zm-64 76.7v262.6C357.2 317.8 280.5 288 200.7 288H192v-96h8.7c79.8 0 156.5-29.8 215.3-83.3"/></svg>');--md-admonition-icon--success:url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7l233.4-233.3c12.5-12.5 32.8-12.5 45.3 0z"/></svg>');--md-admonition-icon--question:url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M256 512a256 256 0 1 0 0-512 256 256 0 1 0 0 512m-86.2-346.7c7.9-22.3 29.1-37.3 52.8-37.3h58.3c34.9 0 63.1 28.3 63.1 63.1 0 22.6-12.1 43.5-31.7 54.8L280 264.4c-.2 13-10.9 23.6-24 23.6-13.3 0-24-10.7-24-24v-13.5c0-8.6 4.6-16.5 12.1-20.8l44.3-25.4c4.7-2.7 7.6-7.7 7.6-13.1 0-8.4-6.8-15.1-15.1-15.1h-58.3c-3.4 0-6.4 2.1-7.5 5.3l-.4 1.2c-4.4 12.5-18.2 19-30.6 14.6s-19-18.2-14.6-30.6l.4-1.2zM224 352a32 32 0 1 1 64 0 32 32 0 1 1-64 0"/></svg>');--md-admonition-icon--warning:url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M256 32c14.2 0 27.3 7.5 34.5 19.8l216 368c7.3 12.4 7.3 27.7.2 40.1S486.3 480 472 480H40c-14.3 0-27.6-7.7-34.7-20.1s-7-27.8.2-40.1l216-368C228.7 39.5 241.8 32 256 32m0 128c-13.3 0-24 10.7-24 24v112c0 13.3 10.7 24 24 24s24-10.7 24-24V184c0-13.3-10.7-24-24-24m32 224a32 32 0 1 0-64 0 32 32 0 1 0 64 0"/></svg>');--md-admonition-icon--failure:url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M459.1 52.4 442.6 6.5c-1.9-3.9-6.1-6.5-10.5-6.5s-8.5 2.6-10.4 6.5l-16.5 45.9-46 16.8c-4.3 1.6-7.3 5.9-7.2 10.4 0 4.5 3 8.7 7.2 10.2l45.7 16.8 16.8 45.8c1.5 4.4 5.8 7.5 10.4 7.5s8.9-3.1 10.4-7.5l16.5-45.8 45.7-16.8c4.2-1.5 7.2-5.7 7.2-10.2 0-4.6-3-8.9-7.2-10.4zm-132.4 53c-12.5-12.5-32.8-12.5-45.3 0l-2.9 2.9c-22-8-45.8-12.3-70.5-12.3C93.1 96 0 189.1 0 304s93.1 208 208 208 208-93.1 208-208c0-24.7-4.3-48.5-12.2-70.5l2.9-2.9c12.5-12.5 12.5-32.8 0-45.3l-80-80zM200 192c-57.4 0-104 46.6-104 104v8c0 8.8-7.2 16-16 16s-16-7.2-16-16v-8c0-75.1 60.9-136 136-136h8c8.8 0 16 7.2 16 16s-7.2 16-16 16z"/></svg>');--md-admonition-icon--danger:url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M416 398.9c58.5-41.1 96-104.1 96-174.9C512 100.3 397.4 0 256 0S0 100.3 0 224c0 70.7 37.5 133.8 96 174.9V464c0 26.5 21.5 48 48 48h48v-48c0-8.8 7.2-16 16-16s16 7.2 16 16v48h64v-48c0-8.8 7.2-16 16-16s16 7.2 16 16v48h48c26.5 0 48-21.5 48-48v-65.1M96 256a64 64 0 1 1 128 0 64 64 0 1 1-128 0m256-64a64 64 0 1 1 0 128 64 64 0 1 1 0-128"/></svg>');--md-admonition-icon--bug:url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M320 0c17.7 0 32 14.3 32 32v64h120c39.8 0 72 32.2 72 72v272c0 39.8-32.2 72-72 72H168c-39.8 0-72-32.2-72-72V168c0-39.8 32.2-72 72-72h120V32c0-17.7 14.3-32 32-32M208 384c-8.8 0-16 7.2-16 16s7.2 16 16 16h32c8.8 0 16-7.2 16-16s-7.2-16-16-16zm96 0c-8.8 0-16 7.2-16 16s7.2 16 16 16h32c8.8 0 16-7.2 16-16s-7.2-16-16-16zm96 0c-8.8 0-16 7.2-16 16s7.2 16 16 16h32c8.8 0 16-7.2 16-16s-7.2-16-16-16zM264 256a40 40 0 1 0-80 0 40 40 0 1 0 80 0m152 40a40 40 0 1 0 0-80 40 40 0 1 0 0 80M48 224h16v192H48c-26.5 0-48-21.5-48-48v-96c0-26.5 21.5-48 48-48m544 0c26.5 0 48 21.5 48 48v96c0 26.5-21.5 48-48 48h-16V224z"/></svg>');--md-admonition-icon--example:url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M288 0H128c-17.7 0-32 14.3-32 32s14.3 32 32 32v132.8c0 11.8-3.3 23.5-9.5 33.5L10.3 406.2C3.6 417.2 0 429.7 0 442.6 0 480.9 31.1 512 69.4 512h309.2c38.3 0 69.4-31.1 69.4-69.4 0-12.8-3.6-25.4-10.3-36.4L329.5 230.4c-6.2-10.1-9.5-21.7-9.5-33.5V64c17.7 0 32-14.3 32-32S337.7 0 320 0zm-96 196.8V64h64v132.8c0 23.7 6.6 46.9 19 67.1l34.5 56.1h-171l34.5-56.1c12.4-20.2 19-43.4 19-67.1"/></svg>');--md-admonition-icon--quote:url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M0 216C0 149.7 53.7 96 120 96h8c17.7 0 32 14.3 32 32s-14.3 32-32 32h-8c-30.9 0-56 25.1-56 56v8h64c35.3 0 64 28.7 64 64v64c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V216m256 0c0-66.3 53.7-120 120-120h8c17.7 0 32 14.3 32 32s-14.3 32-32 32h-8c-30.9 0-56 25.1-56 56v8h64c35.3 0 64 28.7 64 64v64c0 35.3-28.7 64-64 64h-64c-35.3 0-64-28.7-64-64V216"/></svg>');}</style>
+
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/_markdown_exec_pyodide.css">
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/badge.css">
+    
+      <link rel="stylesheet" href="../../termynal.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+   <link href="../../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
+    html.glightbox-open { overflow: initial; height: 100%; }
+    .gslide-title { margin-top: 0px; user-select: text; }
+    .gslide-desc { color: #666; user-select: text; }
+    .gslide-image img { background: white; }
+    .gscrollbar-fixer { padding-right: 15px; }
+    .gdesc-inner { font-size: 0.75rem; }
+    body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color);}
+    body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color);}
+    body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}</style> <script src="../../assets/javascripts/glightbox.min.js"></script></head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="grey" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#objetivo" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="Computação em Nuvem" class="md-header__button md-logo" aria-label="Computação em Nuvem" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Computação em Nuvem
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Roteiro 1
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="grey" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 6H7c-3.31 0-6 2.69-6 6s2.69 6 6 6h10c3.31 0 6-2.69 6-6s-2.69-6-6-6m0 10H7c-2.21 0-4-1.79-4-4s1.79-4 4-4h10c2.21 0 4 1.79 4 4s-1.79 4-4 4M7 9c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme)" data-md-color-scheme="default" data-md-color-primary="grey" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_2" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 7H7a5 5 0 0 0-5 5 5 5 0 0 0 5 5h10a5 5 0 0 0 5-5 5 5 0 0 0-5-5m0 8a3 3 0 0 1-3-3 3 3 0 0 1 3-3 3 3 0 0 1 3 3 3 3 0 0 1-3 3"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="grey" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_2">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_3" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 6H7c-3.31 0-6 2.69-6 6s2.69 6 6 6h10c3.31 0 6-2.69 6-6s-2.69-6-6-6m0 10H7c-2.21 0-4-1.79-4-4s1.79-4 4-4h10c2.21 0 4 1.79 4 4s-1.79 4-4 4M7 9c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="grey" data-md-color-accent="indigo"  aria-label="Switch to system preference"  type="radio" name="__palette" id="__palette_3">
+    
+      <label class="md-header__button md-icon" title="Switch to system preference" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 7H7a5 5 0 0 0-5 5 5 5 0 0 0 5 5h10a5 5 0 0 0 5-5 5 5 0 0 0-5-5m0 8a3 3 0 0 1-3-3 3 3 0 0 1 3-3 3 3 0 0 1 3 3 3 3 0 0 1-3 3"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/hsandmann/insper.cloud.template" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
+  </div>
+  <div class="md-source__repository">
+    github/insper.cloud.template
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Computação em Nuvem" class="md-nav__button md-logo" aria-label="Computação em Nuvem" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Computação em Nuvem
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/hsandmann/insper.cloud.template" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
+  </div>
+  <div class="md-source__repository">
+    github/insper.cloud.template
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Home
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Roteiros
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            Roteiros
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Roteiro 1
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Roteiro 1
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#objetivo" class="md-nav__link">
+    <span class="md-ellipsis">
+      Objetivo
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#criando-a-infraestrutura" class="md-nav__link">
+    <span class="md-ellipsis">
+      Criando a Infraestrutura
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Criando a Infraestrutura">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#instalacao-do-ubuntu" class="md-nav__link">
+    <span class="md-ellipsis">
+      Instalação do Ubuntu
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#acesso-a-main" class="md-nav__link">
+    <span class="md-ellipsis">
+      Acesso à main
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#instalacao-do-maas" class="md-nav__link">
+    <span class="md-ellipsis">
+      Instalação do MAAS
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#configuracao-do-maas" class="md-nav__link">
+    <span class="md-ellipsis">
+      Configuração do MAAS
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#acessando-o-dashboard-do-maas" class="md-nav__link">
+    <span class="md-ellipsis">
+      Acessando o dashboard do MAAS
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Acessando o dashboard do MAAS">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#chaveando-o-dhcp" class="md-nav__link">
+    <span class="md-ellipsis">
+      Chaveando o DHCP
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#checando-a-saude-do-maas" class="md-nav__link">
+    <span class="md-ellipsis">
+      Checando a saúde do MAAS
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#comissionando-servidores" class="md-nav__link">
+    <span class="md-ellipsis">
+      Comissionando servidores
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#criando-ovs-bridge" class="md-nav__link">
+    <span class="md-ellipsis">
+      Criando OVS bridge
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fazendo-acesso-remoto-ao-kit" class="md-nav__link">
+    <span class="md-ellipsis">
+      Fazendo acesso remoto ao Kit
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#app" class="md-nav__link">
+    <span class="md-ellipsis">
+      APP
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="APP">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#instalando-maas" class="md-nav__link">
+    <span class="md-ellipsis">
+      Instalando MAAS
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#primeira-parte-banco-de-dados" class="md-nav__link">
+    <span class="md-ellipsis">
+      Primeira Parte - Banco de Dados
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tarefa-1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Tarefa 1
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#segunda-parte-aplicacao-django" class="md-nav__link">
+    <span class="md-ellipsis">
+      Segunda Parte - Aplicação Django
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tarefa-2" class="md-nav__link">
+    <span class="md-ellipsis">
+      Tarefa 2
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#utilizando-o-ansible-deploy-automatizado-de-aplicacao" class="md-nav__link">
+    <span class="md-ellipsis">
+      Utilizando o Ansible - deploy automatizado de aplicação
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tarefa-3" class="md-nav__link">
+    <span class="md-ellipsis">
+      Tarefa 3
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tarefa-4" class="md-nav__link">
+    <span class="md-ellipsis">
+      Tarefa 4
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#balancamento-de-carga-usando-proxy-reverso" class="md-nav__link">
+    <span class="md-ellipsis">
+      Balancamento de carga usando Proxy Reverso
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tarefa-5" class="md-nav__link">
+    <span class="md-ellipsis">
+      Tarefa 5
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#discussoes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Discussões
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#conclusao" class="md-nav__link">
+    <span class="md-ellipsis">
+      Conclusão
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../roteiro2/main/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Roteiro 2
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../roteiro3/main/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Roteiro 3
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../roteiro4/main/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Roteiro 4
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../projeto/main/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Projeto
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#objetivo" class="md-nav__link">
+    <span class="md-ellipsis">
+      Objetivo
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#criando-a-infraestrutura" class="md-nav__link">
+    <span class="md-ellipsis">
+      Criando a Infraestrutura
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Criando a Infraestrutura">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#instalacao-do-ubuntu" class="md-nav__link">
+    <span class="md-ellipsis">
+      Instalação do Ubuntu
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#acesso-a-main" class="md-nav__link">
+    <span class="md-ellipsis">
+      Acesso à main
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#instalacao-do-maas" class="md-nav__link">
+    <span class="md-ellipsis">
+      Instalação do MAAS
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#configuracao-do-maas" class="md-nav__link">
+    <span class="md-ellipsis">
+      Configuração do MAAS
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#acessando-o-dashboard-do-maas" class="md-nav__link">
+    <span class="md-ellipsis">
+      Acessando o dashboard do MAAS
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Acessando o dashboard do MAAS">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#chaveando-o-dhcp" class="md-nav__link">
+    <span class="md-ellipsis">
+      Chaveando o DHCP
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#checando-a-saude-do-maas" class="md-nav__link">
+    <span class="md-ellipsis">
+      Checando a saúde do MAAS
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#comissionando-servidores" class="md-nav__link">
+    <span class="md-ellipsis">
+      Comissionando servidores
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#criando-ovs-bridge" class="md-nav__link">
+    <span class="md-ellipsis">
+      Criando OVS bridge
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fazendo-acesso-remoto-ao-kit" class="md-nav__link">
+    <span class="md-ellipsis">
+      Fazendo acesso remoto ao Kit
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#app" class="md-nav__link">
+    <span class="md-ellipsis">
+      APP
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="APP">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#instalando-maas" class="md-nav__link">
+    <span class="md-ellipsis">
+      Instalando MAAS
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#primeira-parte-banco-de-dados" class="md-nav__link">
+    <span class="md-ellipsis">
+      Primeira Parte - Banco de Dados
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tarefa-1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Tarefa 1
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#segunda-parte-aplicacao-django" class="md-nav__link">
+    <span class="md-ellipsis">
+      Segunda Parte - Aplicação Django
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tarefa-2" class="md-nav__link">
+    <span class="md-ellipsis">
+      Tarefa 2
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#utilizando-o-ansible-deploy-automatizado-de-aplicacao" class="md-nav__link">
+    <span class="md-ellipsis">
+      Utilizando o Ansible - deploy automatizado de aplicação
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tarefa-3" class="md-nav__link">
+    <span class="md-ellipsis">
+      Tarefa 3
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tarefa-4" class="md-nav__link">
+    <span class="md-ellipsis">
+      Tarefa 4
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#balancamento-de-carga-usando-proxy-reverso" class="md-nav__link">
+    <span class="md-ellipsis">
+      Balancamento de carga usando Proxy Reverso
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tarefa-5" class="md-nav__link">
+    <span class="md-ellipsis">
+      Tarefa 5
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#discussoes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Discussões
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#conclusao" class="md-nav__link">
+    <span class="md-ellipsis">
+      Conclusão
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+  
+
+
+  <h1>Roteiro 1</h1>
+
+<h2 id="objetivo">Objetivo</h2>
+<p>O objetivo geral deste primeiro roteiro é compreender os conceitos fundamentais de uma plataforma de gerenciamento de hardware, especificamente o MAAS (Metal as a Service), e introduzir noções básicas sobre redes de computadores, proporcionando uma base sólida para futuro aprofundamento.</p>
+<p>Para isso, foi utilizado o seguinte material:</p>
+<div class="language-text highlight"><pre><span></span><code>1 NUC (main) com 10Gb e 1 SSD (120Gb)
+1 NUC (server1) com 12Gb e 1 SSD (120Gb)
+1 NUC (server2) com 16Gb e 2 SSD (120Gb+120Gb)
+3 NUCs (server3, server4 e server5) com 32Gb e 2 SSD (120Gb+120Gb)
+1 Switch DLink DSG-1210-28 de 28 portas
+1 Roteador TP-Link TL-R470T+
+</code></pre></div>
+<h2 id="criando-a-infraestrutura">Criando a Infraestrutura</h2>
+<h3 id="instalacao-do-ubuntu">Instalação do Ubuntu</h3>
+<p>Realizou-se a instalação do Sistema Operacional Ubuntu Server 22.04 LTS na NUC main. Para isso, a imagem do mesmo foi baixada, colocada em um pendrive e, esse, utilizado para realizar o boot de instalação na máquina. Com isso, definiu-se o hostname, o login, a senha, o IP fixo (172.16.0.3) e o DNS (172.20.129.131).</p>
+<h3 id="acesso-a-main">Acesso à main</h3>
+<p>Para acessar a máquina main, conectou-se um cabo de rede entre o computador e o switch, permitindo o acesso à rede local.</p>
+<p>Dentro da rede, utilizou-se o seguinte comando:</p>
+<div class="termy" data-termynal data-ty-macos data-ty-title="bash"><span data-ty>ssh cloud@172.16.0.3<br></span></div>
+
+<p>Como pode ser observado na figura abaixo:</p>
+<figure>
+<p><a class="glightbox" href="../main.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Acesso à maquina main" src="../main.png" /></a></p>
+<figcaption>
+<p>Acesso à máquina main</p>
+</figcaption>
+</figure>
+<h3 id="instalacao-do-maas">Instalação do MAAS</h3>
+<p>O MAAS foi instalado para atuar como o gerenciador de hardware do projeto.</p>
+<p>Para realizar sua instalação, na versão "stable" 3.5, dentro da máquina main, utilizaram-se os seguintes comandos:</p>
+<p>I.</p>
+<div class="termy" data-termynal data-ty-macos data-ty-title="bash"><span data-ty>sudo apt update &amp;&amp; sudo apt upgrade -y<br></span></div>
+
+<p>II.</p>
+<div class="termy" data-termynal data-ty-macos data-ty-title="bash"><span data-ty>sudo snap install maas --channel=3.5/stable<br></span></div>
+
+<p>III.</p>
+<div class="termy" data-termynal data-ty-macos data-ty-title="bash"><span data-ty>sudo snap install maas-test-db<br></span></div>
+
+<h3 id="configuracao-do-maas">Configuração do MAAS</h3>
+<p>Primeiramente, foi realizada a inicialização do MAAS, da seguinte maneira:</p>
+<div class="termy" data-termynal data-ty-macos data-ty-title="bash"><span data-ty>sudo maas init region+rack --maas-url http://172.16.0.3:5240/MAAS --database-uri maas-test-db:///<br></span></div>
+
+<p>Em seguida, a criação do usuário admin:</p>
+<div class="termy" data-termynal data-ty-macos data-ty-title="bash"><span data-ty>sudo maas createadmin<br></span></div>
+
+<p>Com isso, determinou-se o login e a senha.</p>
+<p>Posteriormente, foi necessário gerar um par de chaves para autenticação, utilizando o seguinte comando:</p>
+<div class="termy" data-termynal data-ty-macos data-ty-title="bash"><span data-ty>ssh-keygen -t rsa<br></span></div>
+
+<p>E acessar essa chave para poder copiá-la, dessa maneira:</p>
+<div class="termy" data-termynal data-ty-macos data-ty-title="bash"><span data-ty>cat ./.ssh/id_rsa.pub<br></span></div>
+
+<p>A chave pública obtida foi a da figura a seguir:</p>
+<figure>
+<p><a class="glightbox" href="../chave.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Chave pública" src="../chave.png" /></a></p>
+<figcaption>
+<p>Chave pública</p>
+</figcaption>
+</figure>
+<h3 id="acessando-o-dashboard-do-maas">Acessando o dashboard do MAAS</h3>
+<p>O dashboard do MAAS foi acessado através da seguinte URL:</p>
+<div class="language-text highlight"><pre><span></span><code>http://172.16.0.3:5240/MAAS
+</code></pre></div>
+<p>Porém, antes disso, foi necessário desativar o UFW(firewall), pois ele estava bloqueando todas as portas, menos a 22.</p>
+<p>Após realizar o login, configurou-se o DNS Forwader com o DNS do Insper, sendo assim, quando um dispositivo realizar uma consulta DNS, essa solicitação será encaminhada para o DNS do Insper.</p>
+<p>Em seguida, as imagens do Ubuntu 22.04LTS e Ubuntu 20.04LTS foram importadas.</p>
+<figure>
+<p><a class="glightbox" href="../imagemUbuntu.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Imagens Ubuntu" src="../imagemUbuntu.png" /></a></p>
+<figcaption>
+<p>Imagens Ubuntu</p>
+</figcaption>
+</figure>
+<p><strong>Observação: em momento posterior, essas imagens foram corrompidas por uma atualização da própria Cannonical, sendo assim, foi utilizada a imagem do Ubuntu 24.04 LTS para a realização de tarefas que estão mais à frente</strong></p>
+<p>Por fim, foi realizado o upload da chave SSH gerada, permitindo acesso ao servidor sem pecisar de senha.</p>
+<h4 id="chaveando-o-dhcp">Chaveando o DHCP</h4>
+<p>O passo seguinte foi habilitar o DHCP no MAAS, permitindo o gerenciamento dos IPs das outras máquinas.</p>
+<p>Para isso, acessou-se o MAAS Controller e definiu-se o reserved range para iniciar em 172.16.11.1 e acabar em 172.16.14.255. Além disso, o DNS da subnet passou a apontar para o DNS do Insper e, por fim, desabilitou-se o DHCP no roteador.</p>
+<figure>
+<p><a class="glightbox" href="../dhcp.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="DHCP" src="../dhcp.png" /></a></p>
+<figcaption>
+<p>DHCP habilitado no MAAS</p>
+</figcaption>
+</figure>
+<h4 id="checando-a-saude-do-maas">Checando a saúde do MAAS</h4>
+<p>Com o intuito de garantir que estava tudo correto com o MAAS, verificou-se o estado dos serviços do sistema na aba de controladores. A figura abaixo demonstra que tudo ocorreu com êxito.</p>
+<figure>
+<p><a class="glightbox" href="../saude.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Saúde do MAAS" src="../saude.png" /></a></p>
+<figcaption>
+<p>Saúde do MAAS</p>
+</figcaption>
+</figure>
+<h4 id="comissionando-servidores">Comissionando servidores</h4>
+<p>Após verificar o funcionamento do MAAS, os servidores foram comissionados, ou seja, as máquinas, do server1 ao server5, foram cadastradas no MAAS.</p>
+<p>Primeiramente, alterou-se a opção "power type" para INtel AMT, pois essa é a tecnologia de gerenciamento remoto que está presente nas máquinas. Após isso, foram preenchidas as informações sobre o MacAdress das máquinas, presente na parte inferior das mesmas, a senha e o IP do AMT e, como pode-se observar na figura abaixo, o processo ocorreu da maneira desejada.</p>
+<figure>
+<p><a class="glightbox" href="../comissionamento.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Comissionamento das máquinas" src="../comissionamento.png" /></a></p>
+<figcaption>
+<p>Máquinas comissionadas</p>
+</figcaption>
+</figure>
+<p>O roteador também foi adicionado como device no dashboard do MAAS.</p>
+<figure>
+<p><a class="glightbox" href="../router.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Router" src="../router.png" /></a></p>
+<figcaption>
+<p>Router adicionado</p>
+</figcaption>
+</figure>
+<h4 id="criando-ovs-bridge">Criando OVS bridge</h4>
+<p>A OVS tem o objetivo de permitir conectar mais de uma interface de rede dentro de um servidor físico. Para criá-las, acessou-se a aba rede no MAAS e criou-se uma ponte baseada na interface regular "enp1s0".</p>
+<h3 id="fazendo-acesso-remoto-ao-kit">Fazendo acesso remoto ao Kit</h3>
+<p>O objetivo dessa parte do roteiro é conseguir conectar o server main utilizando a porta 22, via SSH. Para isso, realizou-se um NAT para garantir o acesso externo "Rede Wi-fi Insper" ao main.</p>
+<p>Primeiramente, foi necessário abrir a porta 22. Para tal, acessou-se a página do roteador, na aba transmition e depois na aba NAT. Com isso, definiu-se a rede wan1, colocando o ip do roteador (10.103.1.18), a porta externa e interna como 22, o ip interno (172.16.0.3) e o nome como ssh.</p>
+<figure>
+<p><a class="glightbox" href="../nat.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Configurando acesso remoto" src="../nat.png" /></a></p>
+<figcaption>
+<p>Configurando NAT</p>
+</figcaption>
+</figure>
+<p>Feito isso, para acessar a main bastou utilizar o seguinte comando:</p>
+<div class="termy" data-termynal data-ty-macos data-ty-title="bash"><span data-ty>ssh cloud@10.103.1.18<br></span></div>
+
+<figure>
+<p><a class="glightbox" href="../acessomain.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Acesso main" src="../acessomain.png" /></a></p>
+<figcaption>
+<p>Acessando a main</p>
+</figcaption>
+</figure>
+<p>Ademais, realizou-se a liberação do acesso ao gerenciamento remoto do roteador, criando uma regra de gestão para a rede 0.0.0.0/0, liberando acesso para todas as máquinas que estão no WI-fi Insper.</p>
+<figure>
+<p><a class="glightbox" href="../regragestao.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Regra de gestão" src="../regragestao.png" /></a></p>
+<figcaption>
+<p>Criação da regra de gestão</p>
+</figcaption>
+</figure>
+<h2 id="app">APP</h2>
+<h3 id="instalando-maas">Instalando MAAS</h3>
+<div class="termy" data-termynal data-ty-macos data-ty-title="bash"><span data-ty>sudo snap install maas --channel=3.5/Stable<br></span></div>
+
+<figure>
+<p><a class="glightbox" href="../maas.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Tela do Dashboard do MAAS" src="../maas.png" /></a></p>
+<figcaption>
+<p>Dashboard do MAAS</p>
+</figcaption>
+</figure>
+<p>Conforme ilustrado acima, a tela inicial do MAAS apresenta um dashboard com informações sobre o estado atual dos servidores gerenciados. O dashboard é composto por diversos painéis, cada um exibindo informações sobre um aspecto específico do ambiente gerenciado. Os painéis podem ser configurados e personalizados de acordo com as necessidades do usuário.</p>
+<hr />
+<p>Para iniciar nossa aplicação iniciamos adicionando o DNS do Insper (172.20.129.131) seguindo o padrão. Com isso conseguimos acessar nossa máquina facilmente dentro da rede do Insper.</p>
+<h3 id="primeira-parte-banco-de-dados">Primeira Parte - Banco de Dados</h3>
+<p>A primeira etapa da Tarefa 1 consistiu na criação de um banco de dados PostgreSQL no server 1. Para isso, foi necessário implantar o Ubuntu 22.04 para Linux no servidor por meio do dashboard do MAAS, uma vez que ele ainda não possuía um sistema operacional.</p>
+<figure>
+<p><a class="glightbox" href="../ubuntu_server.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Imagem Deploy ubuntu server1 " src="../ubuntu_server.png" /></a></p>
+<figcaption>
+<p>Tela do MAAS exemplificando processo de dar deploy do Ubuntu 22.04 no Server 1</p>
+</figcaption>
+</figure>
+<p>Finalizado o Deploy, acessamos o server 1 pelo terminal e criamos o banco manualmente utilizando os comandos abaixo:</p>
+<div class="termy" data-termynal data-ty-macos data-ty-title="bash"><span data-ty>sudo apt update<br>sudo apt install postgresql postgresql-contrib -y<br></span></div>
+
+<p>Com o PostgreSQL instalado, criamos um usuário e um database para a aplicação. Porém, para liberar o acesso remoto, tivemos que configurar o arquivo de configuração:</p>
+<p><div class="language-text highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>  nano /etc/postgresql/14/main/postgresql.conf
+</span></code></pre></div>
+Adicionando a seguinte linha:</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>  listen_addresses = &#39;*&#39;
+</span></code></pre></div>
+<p>O último passo foi liberar o acesso para qualquer máquina dentro da subnet do kit com o seguinte comando:</p>
+<p><code>host    all             all             172.16.0.0/20          trust</code></p>
+<p>E, por fim, liberamos o firewall:</p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="w">  </span>sudo<span class="w"> </span>ufw<span class="w"> </span>allow<span class="w"> </span><span class="m">5432</span>/tcp
+</span></code></pre></div>
+<hr />
+<h3 id="tarefa-1">Tarefa 1</h3>
+<p>Nossa primeira atividade foi verificar se o <strong>banco de dados PostgreSQL</strong> estava corretamente implantado e funcionando. Para isso, precisamos confirmar que o serviço estava ativo no sistema operacional, acessível localmente na máquina onde foi instalado e que também podia ser alcançado a partir da máquina MAIN, além de identificar em qual porta o serviço estava operando.</p>
+<p>Para nos ajudar, utilizamos alguns comandos como: <mark class="critic">ping, ifconfig, systemctl, telnet, ufw, curl, wget e journalctl</mark></p>
+<p>I.</p>
+<div class="termy" data-termynal data-ty-macos data-ty-title="bash"><span data-ty>systemctl status postgresql<br></span></div>
+
+<figure>
+<p><a class="glightbox" href="../1.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Imagem tarefa 1.1" src="../1.png" /></a></p>
+<figcaption>
+<p>Banco funcionando e seu Status está como "Ativo" para o Sistema Operacional</p>
+</figcaption>
+</figure>
+<p>II.</p>
+<div class="termy" data-termynal data-ty-macos data-ty-title="bash"><span data-ty>psql -U cloud -h 172.16.15.0 tasks<br></span></div>
+
+<figure>
+<p><a class="glightbox" href="../2.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Imagem tarefa 1.2" src="../2.png" /></a></p>
+<figcaption>
+<p>Banco acessível na própria maquina na qual ele foi implantado.</p>
+</figcaption>
+</figure>
+<p>III.</p>
+<div class="termy" data-termynal data-ty-macos data-ty-title="bash"><span data-ty>psql -U cloud -h 172.16.15.0 tasks<br></span></div>
+
+<figure>
+<p><a class="glightbox" href="../3.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Imagem tarefa 1.3" src="../3.png" /></a></p>
+<figcaption>
+<p>Banco acessível a partir de uma conexão vinda da máquina MAIN</p>
+</figcaption>
+</figure>
+<p>IV.</p>
+<div class="termy" data-termynal data-ty-macos data-ty-title="bash"><span data-ty>nmap localhost<br></span></div>
+
+<figure>
+<p><a class="glightbox" href="../4.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Imagem tarefa 1.4" src="../4.png" /></a></p>
+<figcaption>
+<p>Porta este serviço está funcionando</p>
+</figcaption>
+</figure>
+<hr />
+<h3 id="segunda-parte-aplicacao-django">Segunda Parte - Aplicação Django</h3>
+<p>A segunda parte do roteiro foi adicionar uma <strong>Aplicação Django</strong> na nossa máquina, mais especificamente no server 2.</p>
+<p>Porém, até então só temos o server 2 fisicamente, precisamos criar ele e adicionar o sistema operacional. Para esse processo decidimos adicionar o server 2 usando o terminal, mas esse processo também pode ser feito no Dashboard do MAAS.</p>
+<ul>
+<li>Primeiro pedimos uma máquina</li>
+</ul>
+<div class="termy" data-termynal data-ty-macos data-ty-title="bash"><span data-ty>  maas login cloud http://172.16.0.3:5240/MAAS/<br></span></div>
+
+<ul>
+<li>
+<p>Para evitar ter que sempre autenticar e dar a senha em todos os passos, procuramos a nossa API-KEYS na aba API-KEYS do MAAS.</p>
+</li>
+<li>
+<p>Seguimos solicitando a reserva do server 2:</p>
+</li>
+</ul>
+<div class="termy" data-termynal data-ty-macos data-ty-title="bash"><span data-ty>  maas cloud machines allocate name=server2<br></span></div>
+
+<ul>
+<li>Como fizemos pelo Dashboard o deploy do Ubuntu 22.04 no server1, conseguimos fazer por linha de código para o server 2:</li>
+</ul>
+<div class="termy" data-termynal data-ty-macos data-ty-title="bash"><span data-ty>maas cloud machine deploy [system_id]<br></span></div>
+
+<ul>
+<li>
+<p>Esse system_id vem do comando de reserva de máquina!!</p>
+</li>
+<li>
+<p>Agora entramos no server 2 utilizando:   <code>ssh ubuntu@172.16.0.7</code> , que conseguimos ver diretamente da página machines no MAAS.</p>
+</li>
+<li>
+<p>No ssh do server 2 vamos realizar a instalação do arquivo tasks.</p>
+</li>
+</ul>
+<div class="termy" data-termynal data-ty-macos data-ty-title="bash"><span data-ty>git clone https://github.com/raulikeda/tasks.git<br></span></div>
+
+<div class="termy" data-termynal data-ty-macos data-ty-title="bash"><span data-ty>./install.sh<br></span></div>
+
+<ul>
+<li>O próximo passo foi fazer um GET para acessar a URL e abrir visualizar a interface do Django.</li>
+</ul>
+<div class="termy" data-termynal data-ty-macos data-ty-title="bash"><span data-ty>wget http://[IP server2]:8080/admin/<br></span></div>
+
+<ul>
+<li>Mesmo conseguindo acessar o server 2 de dentro, podemos facilitar a entrada no server 2, ou seja, a entrada na interface do Django. Para acessar isso no browser seria necessário fazer um NAT no roteador. Porém vamos criar  um TUNEL SSH, e com esse serviço temporário podemos expor o serviço para fora do kit enquanto o terminal que o tunnel estiver utilizando esteja ativo.</li>
+</ul>
+<p>A ideia principal vai fazer com que após acessar o main pela porta 22, se eu digitasse localhost[alguma porta] , eu iria parar direto no server 2.</p>
+<p>Primeiro saímos da nossa máquina e no terminal da nossa máquina física digitamos o seguinte comando:</p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>ssh<span class="w"> </span>cloud@10.103.0.X<span class="w"> </span>-L<span class="w"> </span><span class="m">8001</span>:<span class="o">[</span>IP<span class="w"> </span>server2<span class="o">]</span>:8080
+</span></code></pre></div>
+<ul>
+<li>Mudamos a linha de código acima para se adequar a nossa máquina, mudando o IP do roteador e o IP do server 2.</li>
+</ul>
+<div class="termy" data-termynal data-ty-macos data-ty-title="bash"><span data-ty>ssh cloud@10.103.1.18 -L 8001:172.16.0.7:8080<br></span></div>
+
+<h3 id="tarefa-2">Tarefa 2</h3>
+<p>Tínhamos as seguintes perguntas para a tarefa 2:</p>
+<ol>
+<li>Do Dashboard do <strong>MAAS</strong> com as máquinas.</li>
+<li>Da aba images, com as imagens sincronizadas.</li>
+<li>Da Aba de cada maquina(5x) mostrando os testes de hardware e commissioning com Status "OK"</li>
+</ol>
+<p>I.</p>
+<figure>
+<p><a class="glightbox" href="../2_1.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Imagem tarefa 2.1" src="../2_1.png" /></a></p>
+<figcaption>
+<p>Machines no MAAS</p>
+</figcaption>
+</figure>
+<p>II.</p>
+<figure>
+<p><a class="glightbox" href="../2_2.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Imagem tarefa 2.2" src="../2_2.png" /></a></p>
+<figcaption>
+<p>Imagens sincronizadas</p>
+</figcaption>
+</figure>
+<p>III.</p>
+<figure>
+<p><a class="glightbox" href="../2_3_1.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Imagem tarefa 2.3.1" src="../2_3_1.png" /></a></p>
+<figcaption>
+<p>Server 1</p>
+</figcaption>
+</figure>
+<figure>
+<p><a class="glightbox" href="../2_3_2.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Imagem tarefa 2.3.2" src="../2_3_2.png" /></a></p>
+<figcaption>
+<p>Server 2</p>
+</figcaption>
+</figure>
+<figure>
+<p><a class="glightbox" href="../2_3_3.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Imagem tarefa 2.3.3" src="../2_3_3.png" /></a></p>
+<figcaption>
+<p>Server 3</p>
+</figcaption>
+</figure>
+<figure>
+<p><a class="glightbox" href="../2_3_4.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Imagem tarefa 2.3.4" src="../2_3_4.png" /></a></p>
+<figcaption>
+<p>Server 4</p>
+</figcaption>
+</figure>
+<figure>
+<p><a class="glightbox" href="../2_3_5.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Imagem tarefa 2.3.5" src="../2_3_5.png" /></a></p>
+<figcaption>
+<p>Server 5</p>
+</figcaption>
+</figure>
+<hr />
+<h3 id="utilizando-o-ansible-deploy-automatizado-de-aplicacao">Utilizando o Ansible - deploy automatizado de aplicação</h3>
+<h3 id="tarefa-3">Tarefa 3</h3>
+<ol>
+<li>De um print da tela do Dashboard do MAAS com as 2 Maquinas e seus respectivos IPs.</li>
+<li>De um print da aplicacao Django, provando que voce está conectado ao server</li>
+<li>Explique como foi feita a implementacao manual da aplicacao Django e banco de dados.</li>
+</ol>
+<p>I.</p>
+<figure>
+<p><a class="glightbox" href="../3.1.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Imagem tarefa 3.1" src="../3.1.png" /></a></p>
+<figcaption>
+<p>Imagens sincronizadas</p>
+</figcaption>
+</figure>
+<p>II.</p>
+<figure>
+<p><a class="glightbox" href="../3.2.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Imagem tarefa 3.2" src="../3.2.png" /></a></p>
+<figcaption>
+<p>Server 1</p>
+</figcaption>
+</figure>
+<p>III. Para realizar essas ações manualmente, seguimos o roteiro do professor. Revisitar:</p>
+<ul>
+<li>
+<p>Primeira parte - Banco de Dados </p>
+</li>
+<li>
+<p>Segunda parte - Aplicação Django</p>
+</li>
+</ul>
+<p>Até agora tinhamos uma Aplicação Django, mas agora teremos 2 aplicações django (server2 e server3) compartilhando o mesmo banco de dados (server1). Os motivos para fazermos isso são dois:</p>
+<ul>
+<li>
+<p>Alta disponibilidade: se um node cair o outro está no ar, para que nosso cliente acesse.</p>
+</li>
+<li>
+<p>Load Balancing: podemos dividir a carga de acesso entre os nós.</p>
+</li>
+</ul>
+<p>Para fazer essa aplicação fizemos tudo <strong>manualmente</strong> a partir do terminal, mas existem aplicações que realizam esse trabalho <strong>automáticamente</strong> para nós. Nesse roteiro vamos usar o gerenciador de deploy <mark class="critic"><strong>Ansible</strong></mark></p>
+<ul>
+<li>
+<p>Para começar pedimos  o deploy no server 3 para o MAAS via cli</p>
+</li>
+<li>
+<p>Depois dentro do MAIN fizemos a instalação do Ansible, usando o seguinte comando:</p>
+</li>
+</ul>
+<div class="termy" data-termynal data-ty-macos data-ty-title="bash"><span data-ty> sudo apt install ansible<br></span></div>
+
+<ul>
+<li></li>
+</ul>
+<div class="termy" data-termynal data-ty-macos data-ty-title="bash"><span data-ty>wget https://raw.githubusercontent.com/raulikeda/tasks/master/tasks-install-playbook.yaml<br></span></div>
+
+<ul>
+<li></li>
+</ul>
+<div class="termy" data-termynal data-ty-macos data-ty-title="bash"><span data-ty>ansible-playbook tasks-install-playbook.yaml --extra-vars server=172.16.0.10<br></span></div>
+
+<h3 id="tarefa-4">Tarefa 4</h3>
+<ol>
+<li>De um print da tela do Dashboard do MAAS com as 3 Maquinas e seus respectivos IPs.</li>
+<li>De um print da aplicacao Django, provando que voce está conectado ao server2 </li>
+<li>De um print da aplicacao Django, provando que voce está conectado ao server3 </li>
+<li>Explique qual diferenca entre instalar manualmente a aplicacao Django e utilizando o Ansible.</li>
+</ol>
+<p>I.</p>
+<figure>
+<p><a class="glightbox" href="../4_1.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Imagem tarefa 4.1" src="../4_1.png" /></a></p>
+<figcaption>
+<p>Machines no MAAS</p>
+</figcaption>
+</figure>
+<p>II.</p>
+<figure>
+<p><a class="glightbox" href="../4_2.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Imagem tarefa 4.2" src="../4_2.png" /></a></p>
+<figcaption>
+<p>Server 2</p>
+</figcaption>
+</figure>
+<p>III.</p>
+<figure>
+<p><a class="glightbox" href="../4_3.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Imagem tarefa 4.3" src="../4_3.png" /></a></p>
+<figcaption>
+<p>Server 3</p>
+</figcaption>
+</figure>
+<p>IV.
+Primeiro, fizemos manualmente o deploy do server 2 via MAAS e instalamos o Django pelo terminal. Para acessá-lo, entramos na main via SSH (porta 22) e depois no server 2 pela porta 8080.</p>
+<p>Para automatizar a instalação, usamos o Ansible, que executa tudo de uma vez com um playbook (script com todos os comando compactados). Além disso, vamos criar um túnel SSH para acessar o server 2 diretamente pela porta 8001, sem precisar passar pela main manualmente.</p>
+<hr />
+<h3 id="balancamento-de-carga-usando-proxy-reverso">Balancamento de carga usando Proxy Reverso</h3>
+<p>Para montar o ponto único de entrada, utilizaremos uma aplicação de proxy reverso como load balancer. Vamos usar o server 4 e usar o <strong>NGINX</strong> nele.</p>
+<div class="admonition note">
+<p class="admonition-title">NGINX</p>
+<p>Loadbalancing é um mecanismo útil para distribuir o tráfego de entrada por vários servidores privados virtuais capazes.</p>
+<ul>
+<li>Em resumo, ele vai fazer o balanceamento das máquinas (server 2 ou 3).</li>
+</ul>
+<figure>
+<p><a class="glightbox" href="../result.jpg" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Imagem tarefa resul" src="../result.jpg" /></a></p>
+<figcaption>
+<p>Resultado final que queremos</p>
+</figcaption>
+</figure>
+</div>
+<ul>
+<li>Primeiro instalamos o NGINX no server 4</li>
+</ul>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>sudo<span class="w"> </span>apt-get<span class="w"> </span>install<span class="w"> </span>nginx
+</span></code></pre></div>
+<ul>
+<li>Para configurar um loadbalancer round robin, precisamos usar o módulo upstream do nginx. Incorporamos a configuração nas definições do nginx.</li>
+</ul>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>sudo<span class="w"> </span>nano<span class="w"> </span>/etc/nginx/sites-available/default
+</span></code></pre></div>
+<ul>
+<li>Precisamos incluir o módulo upstream, que se parece com isto:</li>
+</ul>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a>upstream backend {server 172.16.0.7; server 172.16.0.10; }
+</span><span id="__span-6-2"><a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a>server { location / { proxy_pass http://backend; } }
+</span></code></pre></div>
+<ul>
+<li>Depois reiniciamos o NGINX</li>
+</ul>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-7-1"><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a>sudo<span class="w"> </span>service<span class="w"> </span>nginx<span class="w"> </span>restart
+</span></code></pre></div>
+<ul>
+<li>
+<p>Agora para identificar cada server, precisamos alterar no arquivo de tasks/views.py de cada Django a mensagem "Hello World ...".</p>
+</li>
+<li>
+<p>Entrando no server 2 e 3 de cada vez digitamos em cada:</p>
+</li>
+</ul>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-8-1"><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a><span class="nb">cd</span><span class="w"> </span>tasks/tasks/views.py
+</span></code></pre></div>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-9-1"><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a>from django.shortcuts import render
+</span><span id="__span-9-2"><a id="__codelineno-9-2" name="__codelineno-9-2" href="#__codelineno-9-2"></a>
+</span><span id="__span-9-3"><a id="__codelineno-9-3" name="__codelineno-9-3" href="#__codelineno-9-3"></a>from django.http import HttpResponse
+</span><span id="__span-9-4"><a id="__codelineno-9-4" name="__codelineno-9-4" href="#__codelineno-9-4"></a>
+</span><span id="__span-9-5"><a id="__codelineno-9-5" name="__codelineno-9-5" href="#__codelineno-9-5"></a>def index(request):
+</span><span id="__span-9-6"><a id="__codelineno-9-6" name="__codelineno-9-6" href="#__codelineno-9-6"></a>
+</span><span id="__span-9-7"><a id="__codelineno-9-7" name="__codelineno-9-7" href="#__codelineno-9-7"></a>  return HttpResponse(&quot;Server X&quot;)
+</span></code></pre></div>
+<ul>
+<li>
+<p>Mudamos o "X" para o número do Server que estávamos !!</p>
+</li>
+<li>
+<p>No arquivo de urls.py de cada Server customizamos o path no urlpatterns:</p>
+</li>
+</ul>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-10-1"><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a><span class="nb">cd</span><span class="w"> </span>tasks/tasks/urls.py
+</span></code></pre></div>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-11-1"><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a>urlpatterns = [path( &#39; &#39;, views.index, name=&#39;index&#39;),]
+</span></code></pre></div>
+<h3 id="tarefa-5">Tarefa 5</h3>
+<ol>
+<li>De um print da tela do Dashboard do MAAS com as 4 Maquinas e seus respectivos IPs.</li>
+<li>Altere o conteúdo da mensagem contida na função <code>index</code> do arquivo <code>tasks/views.py</code> de cada server para distinguir ambos os servers. </li>
+<li>Faça um <code>GET request</code> para o path que voce criou em urls.py para o Nginx e tire 2 prints das respostas de cada request, provando que voce está conectado ao server 4, que é o Proxy Reverso e que ele bate cada vez em um server diferente server2 e server3.</li>
+</ol>
+<p>I.</p>
+<figure>
+<p><a class="glightbox" href="../5_1.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Imagem tarefa 5.1" src="../5_1.png" /></a></p>
+<figcaption>
+<p>Machines no MAAS</p>
+</figcaption>
+</figure>
+<p>II.</p>
+<figure>
+<p><a class="glightbox" href="../5_2.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Imagem tarefa 5.2.1" src="../5_2.png" /></a></p>
+<figcaption>
+<p>Alteração URL do Server 2</p>
+</figcaption>
+</figure>
+<figure>
+<p><a class="glightbox" href="../5_2_2.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Imagem tarefa 5.2.2" src="../5_2_2.png" /></a></p>
+<figcaption>
+<p>Alteração URL do Server 3</p>
+</figcaption>
+</figure>
+<p>III.</p>
+<figure>
+<p><a class="glightbox" href="../5_3.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Imagem tarefa 5.3" src="../5_3.png" /></a></p>
+<figcaption>
+<p>Código para GET Request</p>
+</figcaption>
+</figure>
+<figure>
+<p><a class="glightbox" href="../5_3_1.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Imagem tarefa 5.3.1" src="../5_3_1.png" /></a></p>
+<figcaption>
+<p>GET Request Server 2</p>
+</figcaption>
+</figure>
+<figure>
+<p><a class="glightbox" href="../5_3_2.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Imagem tarefa 5.3.2" src="../5_3_2.png" /></a></p>
+<figcaption>
+<p>GET Request Server 3</p>
+</figcaption>
+</figure>
+<h2 id="discussoes">Discussões</h2>
+<p>Acreditamos que as maiores dificuldades foram problemas relacionados a versões de aplicações de terceiros que, em alguns casos, haviam sido atualizadas, exigindo que buscássemos novas documentações para entender a maneira correta de utilizá-las para o que precisávamos. Além disso, o entendimento da teoria de computação em nuvem foi desafiador, pois, muitas vezes, são tópicos complexos e que, sem dominá-los, não poderíamos prosseguir para as próximas etapas. Por outro lado, quando compreendidos, as coisas passavam a fazer mais sentido, tornando o processo mais natural.</p>
+<p>Depois de fazermos algumas ações manualmente e fixarmos bem os conceitos, quando avançamos nos roteiros e vimos aplicações que automatizavam essas ações, como o MAAS, Ansible e Nginx, nosso entendimento e aplicação dos processos tornou-se mais claro e produtivo.</p>
+<h2 id="conclusao">Conclusão</h2>
+<p>Por meio deste roteiro, pudemos compreender a complexidade das redes de computadores, bem como sua importância para projetos que demandam escalabilidade e eficiência. A exploração de ferramentas como o MAAS (Metal as a Service), o Ansible e o Nginx nos permitiu compreender conceitos sobre gerenciamento de hardware, automação de tarefas e redes, destacando a relevância de aplicações robustas nesse contexto. Essa base teórica e prática esclareceu aspectos essenciais da computação em nuvem e abre caminho para futuros aprofundamentos e aplicações em projetos mais complexos. </p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+      <div class="md-progress" data-md-component="progress" role="progressbar"></div>
+    
+    
+    <script id="__config" type="application/json">{"base": "../..", "features": ["content.code.copy", "content.code.select", "content.code.annotate", "content.tooltips", "navigation.instant", "navigation.instant.progress", "navigation.top", "navigation.path", "navigation.tracking", "navigation.expand"], "search": "../../assets/javascripts/workers/search.f8cc74c7.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.c8b220af.min.js"></script>
+      
+        <script src="../../assets/_markdown_exec_pyodide.js"></script>
+      
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+        <script src="../../assets/javascripts/badge.js" async></script>
+      
+        <script src="../../termynal.js"></script>
+      
+    
+  <script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});
+document$.subscribe(() => { lightbox.reload() });
+</script></body>
+</html>
