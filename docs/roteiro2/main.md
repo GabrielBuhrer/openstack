@@ -284,3 +284,11 @@ V.
 ![Tarefa 5](./tarefa5.png)
 /// caption 
 ///
+
+## Discussões
+
+Durante este segundo roteiro, enfrentamos diversos desafios Uma das maiores dificuldades foi entender e fazer funcionar o modelo controller do Juju. Configurar corretamente a interação entre o Juju e o MAAS exigiu diversas tentativas para ajustar a definição da cloud e a adição de credenciais. Além disso, a criação do controlador no server1, com as devidas tags e restrições, mostrou-se um processo delicado, que exigiu uma verificação atenta para que funcionasse. O deploy do dashboard, bem como a integração entre o Grafana e o Prometheus, também apresentou seus desafios, principalmente na criação de túneis e na configuração dos endpoints para que a comunicação entre as aplicações ocorresse sem falhas.
+
+## Conclusão
+
+Em resumo, este roteiro nos permitiu ampliar o entendimento sobre a implantação e gerenciamento de aplicações distribuídas utilizando o Juju. A experiência prática com a criação e configuração do controller, o deploy de aplicações e a integração de serviços reforçou a importância de uma infraestrutura bem planejada e executada para garantir a escalabilidade e o monitoramento eficiente do ambiente.
