@@ -22,9 +22,9 @@ async function evaluatePython(pyodide, editor, output, session) {
     try {
         result = await pyodide.runPythonAsync(code, { globals: getSession(session, pyodide) });
     } catch (error) {
-        writeOutput(output, new Option(error.toString()).innerHTML);
+        writeOutput(output, error);
     }
-    if (result) writeOutput(output, new Option(result).innerHTML);
+    if (result) writeOutput(output, result);
     hljs.highlightElement(output);
 }
 
@@ -91,17 +91,11 @@ async function setupPyodide(idPrefix, install = null, themeLight = 'tomorrow', t
     writeOutput(output, "Initializing...");
     let pyodide = await pyodidePromise;
     if (install && install.length) {
-        try {
-            micropip = pyodide.pyimport("micropip");
-            for (const package of install)
-                await micropip.install(package);
-            clearOutput(output);
-        } catch (error) {
-            clearOutput(output);
-            writeOutput(output, `Could not install one or more packages: ${install.join(", ")}\n`);
-            writeOutput(output, new Option(error.toString()).innerHTML);
-        }
+        micropip = pyodide.pyimport("micropip");
+        for (const package of install)
+            await micropip.install(package);
     }
+    clearOutput(output);
     run.onclick = () => evaluatePython(pyodide, editor, output, session);
     clear.onclick = () => clearOutput(output);
     output.parentElement.parentElement.addEventListener("keydown", (event) => {
