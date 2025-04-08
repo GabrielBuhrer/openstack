@@ -242,3 +242,45 @@ Afim de verificar se a integração foi feita corretamente, criou-se um dashboar
 /// caption
 Dashboard no grafana com source prometheus 
 ///
+
+### Tarefa 1
+
+1. De um print da tela do Dashboard do MAAS com as Maquinas e seus respectivos IPs.
+2. De um print de tela do comando "juju status" depois que o Grafana estiver "active". 
+3. De um print da tela do Dashboard do Grafana com o Prometheus aparecendo como source.
+4. Prove (print) que você está conseguindo acessar o Dashboard a partir da rede do Insper.
+5. De um print na tela que mostra as aplicações sendo gerenciadas pelo JUJU.
+
+I.
+
+![Tarefa 1](./tarefa1.png)
+/// caption 
+///
+
+II.
+
+![Tarefa 2](./tarefa2.png)
+/// caption 
+///
+
+III.
+
+![Tarefa 3a](./tarefa3a.png)
+/// caption 
+///
+
+![Tarefa 3b](./tarefa3b.png)
+/// caption 
+///
+
+IV.
+
+![Tarefa 4](./tarefa4.png)
+/// caption 
+///
+
+V.
+
+![Tarefa 5](./tarefa5.png)
+/// caption 
+///
