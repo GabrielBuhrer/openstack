@@ -51,7 +51,7 @@ Segue esquema do endpoint POST/registrar
 ```
 
 
-## 2. POST/login 
+### 2. POST/login 
 
 * **Função**: autenticar usuário já registrado.
 * **Campos de entrada**:  
@@ -89,7 +89,7 @@ Segue esquema do endpoint POST/login
 ```
 
 
-## GET/consultar 
+### 3. GET/consultar 
 
 * **Função**: autenticar usuário já registrado.
 * **Autorização**: precisa do header 
