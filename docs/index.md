@@ -15,9 +15,9 @@ Gabriel Pessine Buhrer
 
 ## Entregas
 
-- [ ] Roteiro 1
-- [ ] Roteiro 2
-- [ ] Roteiro 3
+- [x] Roteiro 1
+- [x] Roteiro 2
+- [x] Roteiro 3
 - [ ] Roteiro 4
 - [ ] Projeto
 
