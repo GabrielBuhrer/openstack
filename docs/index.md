@@ -18,7 +18,7 @@ Gabriel Pessine Buhrer
 - [x] Roteiro 1
 - [x] Roteiro 2
 - [x] Roteiro 3
-- [ ] Roteiro 4
+- [x] Roteiro 4
 - [ ] Projeto
 
 
