@@ -389,6 +389,40 @@ Adicionar novos nós de **computação** e **block storage** ao cluster OpenStac
 
 Com isso, o antigo “nó reserva” passou a contribuir tanto com poder de processamento quanto com discos, ampliando a capacidade e a resiliência da nuvem.
 
+A seguir está a nossa arquitetura de rede que compõe a tarefa 3:
+
+<div style="text-align: center;">
+  ```mermaid
+  flowchart TB
+      %% Internet “real”
+      internet_real[Internet]
+      internet_real e4@==>|Upstream| insper
+      e4@{ animate: true }
+
+      %% Roteador INSPer
+      insper[Roteador Insper<br>LAN: 10.103.0.1]
+      insper e5@==>|WAN 10.103.1.18| kit
+      e5@{ animate: true }
+
+      %% Roteador KIT
+      kit[Roteador KIT<br>WAN: 10.103.1.18]
+      kit e6@==>|Rede VM 172.16.0.0/20| internet_vm
+      e6@{ animate: true }
+
+      %% Internet VM e Roteador VM
+      internet_vm[Internet VM]
+      internet_vm e1@==>|request<br>172.16.0.0/20| router_vm
+      e1@{ animate: true }
+
+      router_vm[Roteador VM<br>Ext: 172.16.8.97<br>Int: 192.169.0.1]
+      router_vm e2@==>|192.169.0.1| client
+      e2@{ animate: true }
+
+      %% Cliente
+      client[Client<br>192.169.0.78]
+
+  ``` 
+</div>
 
 ## APP
 
