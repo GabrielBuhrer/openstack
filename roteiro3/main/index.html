@@ -1664,6 +1664,38 @@ Carregamos as credenciais de administrador:</p>
 </li>
 </ul>
 <p>Com isso, o antigo “nó reserva” passou a contribuir tanto com poder de processamento quanto com discos, ampliando a capacidade e a resiliência da nuvem.</p>
+<p>A seguir está a nossa arquitetura de rede que compõe a tarefa 3:</p>
+<div style="text-align: center;">
+  <pre class="mermaid"><code>flowchart TB
+    %% Internet “real”
+    internet_real[Internet]
+    internet_real e4@==&gt;|Upstream| insper
+    e4@{ animate: true }
+
+    %% Roteador INSPer
+    insper[Roteador Insper&lt;br&gt;LAN: 10.103.0.1]
+    insper e5@==&gt;|WAN 10.103.1.18| kit
+    e5@{ animate: true }
+
+    %% Roteador KIT
+    kit[Roteador KIT&lt;br&gt;WAN: 10.103.1.18]
+    kit e6@==&gt;|Rede VM 172.16.0.0/20| internet_vm
+    e6@{ animate: true }
+
+    %% Internet VM e Roteador VM
+    internet_vm[Internet VM]
+    internet_vm e1@==&gt;|request&lt;br&gt;172.16.0.0/20| router_vm
+    e1@{ animate: true }
+
+    router_vm[Roteador VM&lt;br&gt;Ext: 172.16.8.97&lt;br&gt;Int: 192.169.0.1]
+    router_vm e2@==&gt;|192.169.0.1| client
+    e2@{ animate: true }
+
+    %% Cliente
+    client[Client&lt;br&gt;192.169.0.78]
+</code></pre>
+</div>
+
 <h2 id="app">APP</h2>
 <p>Nessa parte final do roteiro, nós nos dedicamos a levantar algumas aplicações em máquinas virtuais do Openstack.</p>
 <p>Em duas VMs, nós colocamos a nossa API do projeto 1, em uma terceira, colocamos o PostgreSQL, para servir como banco de dados e, por fim, em uma quarta, colocamos o Nginx para servir como load balancer de acesso às VMs que continham a API.</p>
