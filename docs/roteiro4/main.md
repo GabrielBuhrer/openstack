@@ -1,4 +1,6 @@
-# Objetivo
+# Roteiro 4
+
+## Objetivo
 
 O objetivo do quarto roteiro é apresentar os conceitos básicos de Infraestrutura como Código (IaC), Acordo de Nível de Serviço (SLA) e Recuperação de Desastres (DR). 
 
@@ -12,7 +14,7 @@ Para isso, o roteiro foi dividido em quatro partes principais: entender IaC e su
     
      * **Indopetêcia** > a capacidade de uma determinada operação produzir sempre o mesmo resultado. Garantindo que o ambiente final sempre esteja conforme o definido no código. 
      
-    O Terraform é uma das principais ferramentas IaC, usada para declarar e gerenciar recursos em diferentes plataformas de nuvem com eficiência e rastreabilidade. ]
+    O Terraform é uma das principais ferramentas IaC, usada para declarar e gerenciar recursos em diferentes plataformas de nuvem com eficiência e rastreabilidade. 
     
     Para implementar uma infaestrutura com o Terraform :
 
